@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/admin/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -49,7 +49,7 @@ ZSH_THEME="steeef"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx brew)
+plugins=(git brew)
 
 # ============= User configuration ===============
 
@@ -59,7 +59,7 @@ export PATH="/Users/admin/Documents/Python/scikit-learn/bin:/Users/admin/.opam/s
 autoload -U compinit
 compinit -u
 
-export LANG=en_US.UTF-8
+export LANG=ja_JP.UTF-8
 
 source $ZSH/oh-my-zsh.sh
 
@@ -73,9 +73,10 @@ setopt re_match_pcre
 setopt prompt_subst
 
 # プロンプト指定
-# PROMPT="
-# [%n] %{${fg[yellow]}%}%~%{${reset_color}%}
-# %(?.%{$fg[cyan]%}.%{$fg[magenta]%})%(?!(*'-') <!( ;_;%)? <)%{${reset_color}%} "
+PROMPT=$'
+%{$orange%}[%n]${PR_RST} %{$limegreen%}%~${PR_RST} $vcs_info_msg_0_$(virtualenv_info)
+%(?.%{$fg[cyan]%}.%{$fg[magenta]%})%(?!(*\'-\') <!(*;_;%)? <)%{${reset_color}%} '
+zstyle ':completion:*:default' menu select=1
 
 # プロンプト指定(コマンドの続き)
 PROMPT2='[%n]> '
@@ -85,10 +86,6 @@ SPROMPT="%{$fg[green]%}%{$suggest%}(*'~'%)? < もしかして %B%r%b %{$fg[green
 PROMPT2='[%n]> '
 # You may need to manually set your language environment
 
-PROMPT=$'
-%{$orange%}[%n]${PR_RST} %{$limegreen%}%~${PR_RST} $vcs_info_msg_0_$(virtualenv_info)
-%(?.%{$fg[cyan]%}.%{$fg[magenta]%})%(?!(*\'-\') <!(*;_;%)? <)%{${reset_color}%} '
-zstyle ':completion:*:default' menu select=1
 
 # pip zsh completion start
 function _pip_completion {
