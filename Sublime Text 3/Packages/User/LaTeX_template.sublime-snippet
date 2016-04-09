@@ -1,0 +1,62 @@
+<snippet>
+    <content><![CDATA[
+\documentclass[a4paper, 11pt, titlepage]{jarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{url}
+\usepackage{enumerate}
+\usepackage{here}
+\usepackage[deluxe, expert, bold]{otf}
+\usepackage{listings,jlisting}
+\usepackage{amsmath}
+
+% \renewcommand{\sfdefault}{phv} % \sfdefaultをHelveticaに書き換える
+% \renewcommand{\thesection}{第\arabic{section}章}
+% \renewcommand{\thesubsection}
+%              {\arabic{section}.\arabic{subsection}節}
+% \renewcommand{\thesubsubsection}
+%              {\arabic{section}.\arabic{subsection}.\arabic{subsubsection}項}
+% \renewcommand{\familydefault}{\sfdefault} % 欧文書体をHelveticaに (\ttdefaultならタイプライター→プログラム載せるときとかはこれのほうがいいかも？ 数式載せるならコメントアウト推奨)
+\renewcommand{\kanjifamilydefault}{\mcdefault} % 日本語書体をヒラギノ明朝に (\gtdefaultにするとヒラギノ角ゴになる)
+
+\lstset{%
+  language={Python},
+  basicstyle={\ttfamily},%
+  identifierstyle={\small},%
+  commentstyle={\itshape},
+  classoffset=1,
+  keywordstyle={\bfseries},
+  stringstyle={\ttfamily},
+  ndkeywordstyle={\small},%
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},%
+  numbers=left,%
+  xrightmargin=0zw,%
+  xleftmargin=3zw,%
+  numberstyle={\scriptsize},%
+  stepnumber=1,
+  numbersep=1zw,%
+  lineskip=-0.5ex,%
+  showstringspaces=false
+}
+
+\setlength{\topmargin}{-0.6in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textheight}{46\baselineskip}
+\setlength{\textwidth}{42zw}
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+% \maketitle
+
+\end{document}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>template</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.tex</scope> -->
+</snippet>

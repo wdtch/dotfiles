@@ -1,0 +1,26 @@
+{
+    "selector": "source.ml",
+    "file_regex": "File \"(.*?)\", line ([0-9]+), characters [0-9]+-([0-9]+):(.*)",
+    "cmd": ["ocamlopt", "-o", "$file_base_name", "$file_name"],
+
+    "variants":
+    [
+        {
+            "name": "Run",
+            "windows":
+            {
+                "encoding": "Shift_JIS",
+                "cmd": ["ocaml", "$file_name"],
+            }
+        },
+
+        {
+            "name": "Run with Terminal",
+            "shell": true,
+            "windows":
+            {
+                "cmd": ["start", "cmd", "/c", "ocaml $file_name & pause"],
+            }
+        }
+    ]
+}

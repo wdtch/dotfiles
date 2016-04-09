@@ -1,0 +1,54 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"AutoPEP8",
+		"Coq",
+		"CursorRuler",
+		"Gist",
+		"Git",
+		"GitGutter",
+		"GitStatus",
+		"IceWorld Color Scheme",
+		"Markdown Extended",
+		"Markmon real-time markdown preview",
+		"Monokai Extended",
+		"Monokai JSON+",
+		"OmniMarkupPreviewer",
+		"Origami",
+		"Package Control",
+		"Pandoc",
+		"Python Completions",
+		"Racket",
+		"Scratch",
+		"Solarized Color Scheme",
+		"Sublime Files",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-chktex",
+		"SublimeLinter-contrib-clang",
+		"SublimeLinter-contrib-java",
+		"SublimeLinter-flake8",
+		"SublimeLinter-javac",
+		"SublimeLinter-pep257",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes",
+		"SublimeLinter-ruby",
+		"SublimeMozcInput",
+		"SublimeREPL",
+		"Table Editor",
+		"Theme - Cobalt2",
+		"Theme - Flatland",
+		"Tomorrow Color Schemes",
+		"TrailingSpaces",
+		"Vintageous"
+	],
+	"repositories":
+	[
+		"https://github.com/yasuyuky/SublimeMozcInput"
+	]
+}
