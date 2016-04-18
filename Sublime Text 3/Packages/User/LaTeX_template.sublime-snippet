@@ -16,6 +16,7 @@
 % \renewcommand{\thesubsubsection}
 %              {\arabic{section}.\arabic{subsection}.\arabic{subsubsection}項}
 % \renewcommand{\familydefault}{\sfdefault} % 欧文書体をHelveticaに (\ttdefaultならタイプライター→プログラム載せるときとかはこれのほうがいいかも？ 数式載せるならコメントアウト推奨)
+% \renewcommand{\familydefault}{\ttdefault}
 \renewcommand{\kanjifamilydefault}{\mcdefault} % 日本語書体をヒラギノ明朝に (\gtdefaultにするとヒラギノ角ゴになる)
 
 \lstset{%
@@ -47,11 +48,13 @@
 \setlength{\textwidth}{42zw}
 
 \title{}
-\author{}
-\date{}
+\author{1029-25-4521 \\
+        工学部情報学科計算機科学コース4回 \\
+        和田 雄介}
+\date{\today}
 
 \begin{document}
-% \maketitle
+\maketitle
 
 \end{document}
 ]]></content>
