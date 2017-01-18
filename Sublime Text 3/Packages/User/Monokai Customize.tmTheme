@@ -14,7 +14,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#252F3D</string>
+				<string>#1E2530</string>
 				<key>caret</key>
 				<string>#EAEBED</string>
 				<key>foreground</key>
@@ -92,7 +92,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#66D9EF</string>
+				<string>#45A5E6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -114,7 +114,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F92672</string>
+				<string>#F723A2</string>
 			</dict>
 		</dict>
 		<dict>
@@ -127,7 +127,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#66D9EF</string>
+				<string>#45A5E6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -138,7 +138,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6E22E</string>
+				<string>#E06F2D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -162,7 +162,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6E22E</string>
+				<string>#E0982D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -188,7 +188,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#F92672</string>
+				<string>#F723A2</string>
 			</dict>
 		</dict>
 		<dict>
@@ -212,7 +212,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#8CDFFA</string>
+				<string>#45A5E6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -225,7 +225,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#4BE3FA</string>
+				<string>#45A5E6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -287,8 +287,8 @@
 			<string>meta.coq.proven</string>
 			<key>settings</key>
 			<dict>
-			    <key>background</key>
-			    <string>#2F4F4F</string>
+				<key>background</key>
+				<string>#2F4F4F</string>
 			</dict>
 		</dict>
 	</array>

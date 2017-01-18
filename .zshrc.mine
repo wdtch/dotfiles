@@ -53,7 +53,7 @@ plugins=(git brew)
 
 # ============= User configuration ===============
 
-export PATH="/Users/admin/Documents/Python/scikit-learn/bin:/Users/admin/.opam/system/bin:/usr/local/sbin:/usr/texbin:/usr/local/bin:/Users/admin/.pyenv/shims:/Users/admin/.pyenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/usr/local/texlive/2014/bin/x86_64-darwin"
+export PATH="/usr/local/sbin:/usr/texbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/texlive/2016/bin/x86_64-darwin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 autoload -U compinit
@@ -122,9 +122,7 @@ compctl -K _pip_completion pip
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias rm="rm -i"
-alias mv="mv -i"
-alias cp="cp -i"
+alias sshlab="ssh wada@ampc20"
 
 function exists { which $1 &> /dev/null }
 
@@ -141,6 +139,7 @@ if exists percol; then
     bindkey '^R' percol_select_history
 fi
 
-[[ -s /Users/admin/.autojump/etc/profile.d/autojump.sh ]] && source /Users/admin/.autojump/etc/profile.d/autojump.sh
+# setting of autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
