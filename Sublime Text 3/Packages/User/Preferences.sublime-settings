@@ -14,7 +14,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"Vintageous"
 	],
 	"indent_to_bracket": true,
 	"mark_style": "squiggly underline",
@@ -29,7 +30,9 @@
 	"theme": "Flatland Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true,
 	"vintageous_start_in_command_mode": true,
 	"vintageous_use_ctrl_keys": true,
-	"vintageous_use_sys_clipboard": true
+	"vintageous_use_sys_clipboard": true,
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~? 、。「」【】『』()!?てにをはがのともへでや"
 }

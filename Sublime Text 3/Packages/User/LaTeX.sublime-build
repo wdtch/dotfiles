@@ -2,6 +2,6 @@
   "selector": "source.tex",
   "shell": false,
   "cmd":[
-    "/bin/sh", "-c", "/usr/local/texlive/2014/bin/x86_64-darwin/platex $file_base_name.tex && /usr/local/texlive/2014/bin/x86_64-darwin/dvipdfmx -p a4 $file_base_name.dvi && /usr/bin/open $file_base_name.pdf"
+    "/bin/sh", "-c", "latexmk $file_base_name.tex && evince $file_base_name.pdf"
   ]
 }

@@ -49,11 +49,15 @@ export ZSH=~/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew)
+plugins=(git brew zsh-syntax-highlighting)
 
 # ============= User configuration ===============
 
+<<<<<<< HEAD
 export PATH="/usr/local/sbin:/usr/texbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/texlive/2016/bin/x86_64-darwin"
+=======
+export PATH="/usr/local/sbin:/usr/texbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/usr/local/SPTK/bin"
+>>>>>>> Updated
 # export MANPATH="/usr/local/man:$MANPATH"
 
 autoload -U compinit
@@ -64,7 +68,7 @@ export LANG=ja_JP.UTF-8
 source $ZSH/oh-my-zsh.sh
 
 # もしかして機能
-setopt correct
+#setopt correct
 
 # PCRE 互換の正規表現を使う
 setopt re_match_pcre
@@ -74,16 +78,16 @@ setopt prompt_subst
 
 # プロンプト指定
 PROMPT=$'
-%{$orange%}[%n]${PR_RST} %{$limegreen%}%~${PR_RST} $vcs_info_msg_0_$(virtualenv_info)
-%(?.%{$fg[cyan]%}.%{$fg[magenta]%})%(?!(*\'-\') <!(*;_;%)? <)%{${reset_color}%} '
+%{$orange%}[%n]${PR_RST} %{$fg[cyan]%}%~${PR_RST} $vcs_info_msg_0_$(virtualenv_info)
+%(?.%{$fg[cyan]%}.%{$fg[magenta]%})%(?! =>! =>)%{${reset_color}%} '
 zstyle ':completion:*:default' menu select=1
 
 # プロンプト指定(コマンドの続き)
 PROMPT2='[%n]> '
 
 # もしかして時のプロンプト指定
-SPROMPT="%{$fg[green]%}%{$suggest%}(*'~'%)? < もしかして %B%r%b %{$fg[green]%}かな? [そう!(y), 違う!(n),a,e]:${reset_color} "
-PROMPT2='[%n]> '
+#SPROMPT="%{$fg[green]%}%{$suggest%} もしかして %B%r%b %{$fg[green]%}かな? [そう!(y), 違う!(n),a,e]:${reset_color} "
+#PROMPT2='[%n]> '
 # You may need to manually set your language environment
 
 
@@ -97,6 +101,8 @@ function _pip_completion {
              PIP_AUTO_COMPLETE=1 $words[1] ) )
 }
 compctl -K _pip_completion pip
+
+[[ -s /usr/share/autojump/autojump.zsh ]] && . /usr/share/autojump/autojump.zsh
 # pip zsh completion end
 
 # ============ end of user configration ===================
@@ -122,7 +128,14 @@ compctl -K _pip_completion pip
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+<<<<<<< HEAD
 alias sshlab="ssh wada@ampc20"
+=======
+# alias rm="rm -i"
+# alias mv="mv -i"
+# alias cp="cp -i"
+# alias aplay="aplay -D plughw:2,0"
+>>>>>>> Updated
 
 function exists { which $1 &> /dev/null }
 
@@ -139,7 +152,13 @@ if exists percol; then
     bindkey '^R' percol_select_history
 fi
 
+<<<<<<< HEAD
 # setting of autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+=======
+# [[ -s /Users/admin/.autojump/etc/profile.d/autojump.sh ]] && source /Users/admin/.autojump/etc/profile.d/autojump.sh
+
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+>>>>>>> Updated

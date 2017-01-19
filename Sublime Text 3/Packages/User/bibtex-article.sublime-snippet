@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+@article{${1}
+    title="${2}",
+    author="${3}",
+    journal="${4}",
+    year=${5},
+    volume={${6}},
+    number={${7}},
+    pages={${8}},
+    memo="${9}"
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>art</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.bibtex</scope>
+</snippet>

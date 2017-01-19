@@ -20,6 +20,7 @@
 	// Sync PDF to current editor position after building (true) or not
 	"forward_sync": true,
 
+	"preview_math_density": 25,
 
 // ------------------------------------------------------------------
 // Platform settings: adapt as needed for your machine
@@ -51,7 +52,7 @@
 		"python2": "",
 		// The name of the ST2 or ST3 executable. On Ubuntu, both subl and sublime-text are
 		// available for ST2; adjust as needed for other platforms, and for ST3
-		"sublime": "sublime-text",
+		"sublime": "subl",
 		// How long to wait after evince has launched before sending a sync message
 		// in seconds, floating point; choose 2.0 or 3.0 on a slower machine, 0.5 on a fast one
 		// Note: only tweak this if sync after launching the PDF viewer does not seem to work,
@@ -126,7 +127,18 @@
 
 		"linux" : {
 			// See README or third-party documentation
-		}
+		},
+
+		"command" : ["latexmk", "-cd",
+                    "-e", "$latex = 'platex -synctex=1 -src-specials -interaction=nonstopmode'",
+                    "-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
+                    "-e", "$bibtex = 'pbibtex %O %B'",
+                    "-e", "$makeindex = 'makeindex %O -o %D %S'",
+                    "-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
+                    "-e", "$pdf_mode = '3'",
+                    "-e", "$pdf_update_method = '0'",
+                    "-e", "$pdf_previewer = 'evince'",
+                    "-f", "-norc", "-gg", "-pdfdvi"]
 	},
 
 

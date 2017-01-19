@@ -1,9 +1,33 @@
 [
-{
-        "keys": ["super+j"],
-        "command": "_enter_normal_mode",
-        "args": {"mode": "mode_insert"},
-        "context": [{"key": "vi_insert_mode_aware"}]
-},
-{ "keys": ["ctrl+space"], "command": "toggle_mozc" }
+    // Mozc切り替え
+    {
+        "keys": ["ctrl+space"], "command": "toggle_mozc"
+    },
+    // 複数選択
+    {
+        "keys": ["ctrl+d"], "command": "find_under_expand"
+    },
+    // 複数選択スキップ
+    {
+        "keys": ["ctrl+l"], "command": "find_under_expand_skip"
+    },
+    // ソフトアンドゥ(複数選択やり直し)
+    {
+        "keys": ["ctrl+u"], "command": "soft_undo"
+    },
+    // Alt+left(right)で行頭（行末）に移動
+    {
+        "keys": ["alt+right"], "command": "move_to", "args": { "to": "eol", "extend": false}
+    },
+    {
+        "keys": ["alt+left"], "command": "move_to", "args": { "to": "bol", "extend": false}
+    },
+    {
+        "keys": ["alt+shift+right"], "command": "move_to", "args": { "to": "eol", "extend": true}
+    },
+    {
+        "keys": ["alt+shift+left"], "command": "move_to", "args": { "to": "bol", "extend": true}
+    },
+    { "keys": ["alt+up"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+    { "keys": ["alt+down"], "command": "move_to", "args": {"to": "eof", "extend": false} },
 ]

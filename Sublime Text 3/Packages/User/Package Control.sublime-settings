@@ -1,5 +1,7 @@
 {
 	"bootstrapped": true,
+	"http_proxy": "http://winnie:3128/",
+	"https_proxy": "https://winnie:3128/",
 	"in_process_packages":
 	[
 	],
@@ -7,17 +9,15 @@
 	[
 		"Alignment",
 		"AutoPEP8",
+		"CMakeEditor",
+		"Codecs33",
+		"ConvertToUTF8",
 		"Coq",
 		"CursorRuler",
-		"Gist",
-		"Git",
 		"GitGutter",
 		"GitStatus",
-		"IceWorld Color Scheme",
-		"Markdown Extended",
-		"Markmon real-time markdown preview",
-		"Monokai Extended",
-		"Monokai JSON+",
+		"LaTeXTools",
+		"Multibyte Word Separators",
 		"OmniMarkupPreviewer",
 		"Origami",
 		"Package Control",
@@ -34,8 +34,8 @@
 		"SublimeLinter-contrib-java",
 		"SublimeLinter-flake8",
 		"SublimeLinter-javac",
-		"SublimeLinter-pep257",
 		"SublimeLinter-pep8",
+		"SublimeLinter-pydocstyle",
 		"SublimeLinter-pyflakes",
 		"SublimeLinter-ruby",
 		"SublimeMozcInput",
@@ -49,6 +49,8 @@
 	],
 	"repositories":
 	[
-		"https://github.com/yasuyuky/SublimeMozcInput"
+		"https://github.com/yasuyuky/SublimeMozcInput",
+		"https://github.com/yasuyuky/SublimeMozcInput",
+		"https://github.com/SublimeText/IndentGuides"
 	]
 }
