@@ -128,14 +128,11 @@ compctl -K _pip_completion pip
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-<<<<<<< HEAD
 alias sshlab="ssh wada@ampc20"
-=======
 # alias rm="rm -i"
 # alias mv="mv -i"
 # alias cp="cp -i"
 # alias aplay="aplay -D plughw:2,0"
->>>>>>> Updated
 
 function exists { which $1 &> /dev/null }
 
