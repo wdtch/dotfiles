@@ -53,11 +53,7 @@ plugins=(git brew zsh-syntax-highlighting)
 
 # ============= User configuration ===============
 
-<<<<<<< HEAD
 export PATH="/usr/local/sbin:/usr/texbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/texlive/2016/bin/x86_64-darwin"
-=======
-export PATH="/usr/local/sbin:/usr/texbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/usr/local/SPTK/bin"
->>>>>>> Updated
 # export MANPATH="/usr/local/man:$MANPATH"
 
 autoload -U compinit
@@ -149,13 +145,7 @@ if exists percol; then
     bindkey '^R' percol_select_history
 fi
 
-<<<<<<< HEAD
 # setting of autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-=======
-# [[ -s /Users/admin/.autojump/etc/profile.d/autojump.sh ]] && source /Users/admin/.autojump/etc/profile.d/autojump.sh
-
-# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
->>>>>>> Updated
